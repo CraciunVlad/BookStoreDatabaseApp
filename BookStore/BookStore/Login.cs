@@ -31,10 +31,13 @@ namespace BookStore
             if (x != 0)
             {
                 MessageBox.Show("e ok");
+                Program.logged = true;
+                this.Close();                       
             }
             else
             {
                 MessageBox.Show("nu-i ok");
+                Program.logged = false; 
             }
         }
     }
